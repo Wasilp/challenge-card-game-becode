@@ -9,7 +9,7 @@ class Player:
         self.turn_count = Player.turn_count
         self.number_of_cards = number_of_cards
         self.history = history
-        # instance method 
+    # instance method 
     def play(self, sayMyName):
       print(sayMyName)
       self.name = sayMyName
@@ -22,6 +22,7 @@ class Player:
 
 class Deck():
 # instance attributes
+# self.cards is the deck itself
   def __init__(self):
    self.cards = []
 
@@ -36,8 +37,13 @@ class Deck():
     random.shuffle(self.cards)
     print(self.cards)
   
-  def distribute(self,nbPLayer):
-    print(nbPLayer)
+  def distribute(self,nbPLayer,nbDiv):
+      Player.number_of_cards = nbDiv
+      print(Player.number_of_cards)
+      for i in range(Player.number_of_cards):
+        deal = self.cards.pop()
+        Player.cards = deal
+        print(Player.cards)
     
   # def __str__(self):
   #   s = ""
