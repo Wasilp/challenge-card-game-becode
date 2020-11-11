@@ -5,7 +5,7 @@ import random
 # Class Player representation of a player
 class Player:
     def __init__(
-        self, name: str, cards=[], number_of_cards=0, history=[], turn_count=0
+        self, name: str, cards=[], number_of_cards:int = 0, history=[], turn_count: int = 0
     ):
         """[Class Player representation of a player]
 
