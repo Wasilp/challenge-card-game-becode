@@ -18,4 +18,8 @@ python main.py
 ```
 from your directory in terminal
 
+### Then 
+
+Enter number of player and name of all the players.
+
 Copyright (C) 11/11/2020 Pierre Wasilewski
